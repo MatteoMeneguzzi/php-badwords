@@ -14,15 +14,15 @@
         $replacing = str_replace('puzza', '***', $text);
     ?>
     <header>
-<p>
-<?php echo $text; ?>
 
-<?php echo $length; ?>
+<p><?php echo $text; ?></p>
 
-<?php echo $bad_word; ?>
+<p><?php echo $length; ?></p>
 
-<?php echo $replacing; ?>
-</p>
+<p><?php echo $bad_word; ?></p>
+
+<p><?php echo $replacing; ?></p>
+
 </header>
 </body>
 </html>
