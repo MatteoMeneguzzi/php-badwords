@@ -10,8 +10,11 @@
     <?php
         $text = 'Quella puzza non se ne andava, era una puzza infernale, odiavo quella puzza, puzza puzza puzza che puzza.';
         $length = strlen($text);
-        $bad_word = $_GET['bad'];
-        $replacing = str_replace('puzza', '***', $text);
+        // Avrei potuto anche mettere "strlen($text);" 
+        // direttamente nell'echo nel p:
+        // <p><?php echo strlen($text);...
+        $bad_word = $_GET['bad_word'];
+        $replacing = str_replace($bad_word, '***', $text);
     ?>
     <header>
 
